@@ -1,0 +1,12 @@
+{
+	"name":"a4",
+	"version":"1.0.0",
+	"dependencies":{
+		"express": "*",
+		"mongoose": "*",
+		"connect-busboy":"*",
+		"express-session":"*",
+		"geoip-lite":"*",
+		"mobile-detect":"*"
+	}
+}

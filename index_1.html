@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/index_script.js"></script>
+	<link rel="stylesheet" type="text/css" href="index_style.css">
+    <title>ANGEL NET</title>
+	<script>
+	    $("#signUpButton").click(function() {
+
+	    });
+	    $("#loginButton").click(function() {
+		
+	    });
+	</script>
+  </head>
+   <body>
+   	   <!--Top Bar-->
+       <div id="topBanner" style=
+       "background-color:#232b34;width:100%;position:absolute;height:7px;left:0px;">
+       </div>
+	   <!--Body-->
+       <div>
+	   	   <!--Logo Position Set Up-->
+           <header>
+               <img alt="" border="0" id="topLogo" src="images/logo_only.png">
+               <img alt="" border="0" id="logo" src="images/Logo_HD.png">
+               <div id="loginSelect"></div>
+               <div id="signupSelect"></div>
+           </header>
+		   <!--Input Panel Position Set Up-->
+           <div class="inputPanel" id="loginPanel">
+               <h1 class="warning" id="warn1"></h1>
+               <h1 class="inputLabel" id="inputLabel1">EMAIL</h1>
+               <h1 class="inputLabel" id="inputLabel2">PASSWORD</h1><input class=
+               "userInput" id="userNameInput" name="firstname" type="text">
+               <input class="userInput" id="pwdInput" name="firstname" type=
+               "password">
+               <h1 class="userInputButton" id="loginButton">SIGN IN</h1>
+           </div>
+		   <!--Input Panel for Registaration-->
+           <div class="inputPanel" id="signupPanel">
+               <h1 class="warning" id="warn2"></h1>
+               <h1 class="inputLabel" id="inputLabel3">NEW USER EMAIL</h1>
+               <h1 class="inputLabel" id="inputLabel4">PASSWORD</h1>
+               <h1 class="inputLabel" id="inputLabel5">CONFIRMED
+               PASSWORD</h1>
+			   <input class="userInput" id="newUserNameInput" name=
+               "firstname" type="text">
+			   <input class="userInput" id="newPwdInput"
+               name="firstname" type="password">
+			   <input class="userInput" id=
+               "newPwdConfirmInput" name="firstname" type="password">
+               <h1 class="userInputButton" id="signUpButton">SIGN UP</h1>
+           </div>
+	   <!--Bottom Bar-->
+       <div id="botBanner" style=
+       "background-color:#232b34;width:100%;position:absolute;height:7px;left:0px;">
+       </div>
+   </body>
+</html>

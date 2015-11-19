@@ -1,0 +1,458 @@
+body {
+    -webkit-user-select: none;
+/* Chrome/Safari */
+    -moz-user-select: none;
+/* Firefox */
+    -ms-user-select: none;
+/* IE10+ */
+    background-image: url(images/background.png);
+/* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#logo {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+#topLogo {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+#homepageTitle {
+    position: relative;
+    font-size: 30px;
+    text-align: left;
+    font-family: ChampagneAndLimousines;
+    font-weight: 100;
+    margin-top: 22px;
+    height: 33px;
+    width: 275px;
+    padding: 5px;
+    padding-left: 20px;
+    color: #E7EDEE;
+    background-color: rgba(165,171,145,0.61);
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 57px;
+}
+
+#userList {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.10);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.listItem {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    background-color: rgba(171,171,146,0.22);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.listItem:hover {
+    background-color: rgba(28,30,31,0.45);
+}
+
+.active {
+    background-color: rgba(28,30,31,0.45);
+}
+
+#editProfileButton {
+    top: 90px;
+    left: 420px;
+}
+
+#setAdminButton {
+    top: 130px;
+    left: 420px;
+}
+
+#removeAdminButton {
+    top: 130px;
+    left: 420px;
+}
+
+#deleteProfileButton {
+    top: 170px;
+    left: 420px;
+}
+
+.profilePic {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -2px;
+    border: 2px solid #C2CCCE;
+    pointer-events: none;
+}
+
+.displayEmail {
+    position: relative;
+    width: 210px;
+    float: right;
+    font-family: ChampagneAndLimousines;
+    font-weight: 100;
+    font-size: 12px;
+    margin: 2px;
+    margin-top: 10px;
+    color: #D8DEE4;
+    pointer-events: none;
+}
+
+.displayName {
+    position: relative;
+    width: 210px;
+    float: right;
+    font-family: ChampagneAndLimousines;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 2px;
+    color: #fff;
+    pointer-events: none;
+    alignment-adjust: ;
+}
+
+#profile {
+    position: absolute;
+    left: 310px;
+    top: 5px;
+    background-color: rgba(0,0,0,0.10);
+    margin-right: 5px;
+}
+
+#defaultPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#viewPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#editPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#userProfilePic {
+    position: absolute;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+}
+
+#userProfileName {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 50px;
+    top: 320px;
+    left: 420px;
+    text-align: left;
+    font-size: 50px;
+}
+
+#userProfileEmail {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 50px;
+    top: 375px;
+    left: 420px;
+    text-align: left;
+    font-size: 25px;
+}
+
+#userIdentity {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 50px;
+    top: 400px;
+    left: 420px;
+    text-align: left;
+    font-size: 20px;
+    color: #BF3131;
+}
+
+#userProfileDescription {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 600px;
+    height: 50px;
+    top: 450px;
+    left: 100px;
+    text-align: left;
+    font-size: 25px;
+    color: #BBB79D;
+}
+
+@font-face {
+    font-family: ChampagneAndLimousines;
+    src: url("fonts/Champagne & Limousines.woff");
+}
+
+.jspTrack {
+    background: #787878;
+/* changed from #dde */
+    position: relative;
+}
+
+.jspDrag {
+    background: rgba(0,0,0,0.2);
+/* changed from #bbd */
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#userEditPic {
+    position: absolute;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+}
+
+#photoUploadForm {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 420px;
+    left: 100px;
+}
+
+#fileSelect {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#submitPhotoButton {
+    top: 30px;
+}
+
+#userEditEmail {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 50px;
+    top: 100px;
+    left: 420px;
+    text-align: left;
+    font-size: 35px;
+}
+
+#userEditName {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 150px;
+    height: 50px;
+    top: 167px;
+    left: 420px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#userEditNameBox {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 600px;
+    height: 30px;
+    top: 160px;
+    left: 580px;
+    text-align: left;
+    font-size: 17px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#userEidtDesciprtion {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 200px;
+    height: 50px;
+    top: 220px;
+    left: 420px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#userEditDescriptionBox {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 600px;
+    height: 174px;
+    top: 220px;
+    left: 580px;
+    text-align: left;
+    font-size: 17px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    text-indent: 30px;
+    font-weight: 700;
+    padding: 3px;
+    resize: none;
+}
+
+#saveChangeButton {
+    top: 400px;
+    left: 580px;
+}
+
+.inputBox {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 300px;
+    height: 30px;
+    left: 580px;
+    text-align: left;
+    font-size: 17px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#userEditNewPwdBox1 {
+    top: 485px;
+}
+
+#userEditNewPwdBox2 {
+    top: 545px;
+}
+
+#userEditNewPwdBox3 {
+    top: 605px;
+}
+
+.inputPwdLabel {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 200px;
+    height: 50px;
+    left: 420px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#confirmPasswordChange {
+    top: 645px;
+    left: 580px;
+}
+
+#userEidtPwd1 {
+    top: 490px;
+}
+
+#userEidtPwd2 {
+    top: 550px;
+}
+
+#userEidtPwd3 {
+    top: 610px;
+}
+
+.warning {
+    position: absolute;
+    font-size: 15px;
+    color: #E90707;
+    font-family: ChampagneAndLimousines;
+    font-weight: 100;
+    text-align: left;
+    width: 300px;
+    margin-top: 8px;
+    letter-spacing: 4px;
+}
+
+#warn1 {
+    top: 410px;
+    left: 730px;
+}
+
+#warn2 {
+    top: 655px;
+    left: 780px;
+}
+
+.standardButton {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(17,46,56,0.66);
+    padding: 5px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.standardButton:hover {
+    color: #12171A;
+    background-color: rgba(17,46,56,0.2);
+}
+
+#userBehaviourPanel {
+    position: absolute;
+    font-family: ChampagneAndLimousines;
+    width: 600px;
+    height: 50px;
+    top: 450px;
+    left: 800px;
+    text-align: left;
+    font-size: 7px;
+    color: #F1A09F;
+}
+
+#userBehavior {
+    position: relative;
+    margin-top: 5px;
+}

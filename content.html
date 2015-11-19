@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+	<script src="script/jquery-1.11.3.min.js"></script>
+	<script src="script/jquery.nicescroll.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
+    <title>Glen Union</title>
+	
+	<style type="text/css">
+        	body{
+	            -webkit-user-select: none; /* Chrome/Safari */        
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* IE10+ */
+                /* Rules below not implemented in browsers yet */
+                -o-user-select: none;
+                user-select: none;
+        	 }
+		   header{
+		   	   position:absolute;
+			   width:100%;
+			   left:0px;
+			   top:0px;
+			   height:120px;
+			   border-bottom:#DDDDFD solid 1px;
+		    }
+			
+			#SignOutButton{
+			   position:absolute;
+			   font-size:15px;
+			   color:#05054F;
+			   background:none;
+			   border:none;
+			   right:30px;
+			   top:10px;
+			   cursor:pointer;
+			   outline:none;
+			 }
+			 #SignOutButton:hover{
+			   color:#335BC9;
+			  }
+			  
+		   #logo{
+		   	   position:absolute;
+			   width:60px;
+			   height:60px;
+			   opacity:0.7;
+			   user-drag: none; 
+               -moz-user-select: none;
+               -webkit-user-drag: none;
+			}
+		   nav{
+		   	   position:absolute;
+			   width:60%;
+			   left:20%;
+			   top:125px;
+			   height:40px;
+			   z-index:1;
+		    }
+		   .navBar{
+		   	   position:relative;
+		   	   width:16.6%;
+			   float:left;
+			   height:40px;
+			   text-align:center;
+			   font-size:15px;
+			   font-family:ChampagneAndLimousines;
+			   letter-spacing: 1px;
+			   padding-top:20px;
+			   font-weight:600;
+			   cursor:pointer;
+			   color:#14234E;
+		    }
+			
+		   .navBar:hover{
+		   	   color:#2D50B1;
+		    }
+			
+			.navBar span{
+			   position:relative;
+			 }
+			
+			#mainContent{
+						 position:absolute;
+						 width:60%;
+						 height:5000px;
+						 top:220px;
+						 background:white;
+						 border-left:#D5E1F9 solid 1px;
+						 border-right:#D5E1F9 solid 1px;
+						 z-index:0;
+			 }
+			
+			.page{
+				   position:relative;
+				   margin-top:100px;
+				   width:96%;
+				   height: 1000px;
+				   margin: auto;
+				   text-align:center;
+			 }
+			 
+			 #quote{
+			 		position:relative;
+			 		font-family: 'Trocchi', serif;
+					font-size:15px;
+					top:500px;
+			  }
+			 #quoteName{
+			 			position:relative;
+			 			font-family: 'Trocchi', serif;
+						font-size:15px;
+						top:520px;
+						left:300px;
+			  }
+			
+			@font-face {
+                font-family: ChampagneAndLimousines;
+                src: url("fonts/Champagne & Limousines.woff");
+            }
+			
+			@media screen and (max-width: 1500px) {
+				   .navBar{
+				   		   font-size:10px;
+						   height:30px;
+						   padding-top:10px;
+				   }
+				   nav{
+				   	   height:30px;
+				    }
+				   #mainContent{
+				   	   top:200px;
+				    }
+			}
+			
+			@media screen and (max-width: 1000px) {
+				   .navBar{
+				   		   width:100%;
+						   height:inherit;
+						   font-size:17px;
+						   height:60px;
+				   }
+				   nav{
+				   	   height:360px;
+				    }
+				   #mainContent{
+				   	   top:520px;
+				    }
+			}
+			
+	</style>
+	
+	<script type="text/javascript">
+    	$(document).ready( function() {
+    	
+    	   var windowWidth = $(window).width();
+    	   var windowHeight = $(window).height();
+    	   var middle_axis = windowWidth/2;
+    	   
+    	   $("#logo").css({"top": "30px","left": middle_axis - 30 + "px"});
+    	   $("#mainContent").css({"left": middle_axis - windowWidth*0.3 + "px"});
+		   
+		   $("nav").css({"-webkit-transition": "top 0.5s"});
+	   	   $("nav").css({"-moz-transition": "top 0.5s"});
+	   	   $("nav").css({"transition": "top 0.5s"});
+		   
+		   $("html").niceScroll();
+		   
+		   $(document).on('scroll', function(){
+		   		var windowWidth = $(window).width();
+		   		var navPosition = 125 - $(window).scrollTop();
+                if (navPosition < 0 && windowWidth > 1000){
+				   $("nav").css({"top": $(window).scrollTop() + "px"});
+				}
+				else{
+				   $("nav").css({"top": "125px"});
+				}
+            });
+		   
+    	});
+    	
+    	$( window ).resize(function() {
+    	   var windowWidth = $(window).width();
+    	   var windowHeight = $(window).height();
+    	   var middle_axis = windowWidth/2;
+		   
+    	   $("#logo").css({"top": "30px","left": middle_axis - 30 + "px"});
+		   $("#mainContent").css({"left": middle_axis - windowWidth*0.3 + "px"});
+		   
+		   $("html").getNiceScroll().resize();
+		   
+		   $(document).scroll();
+    	});
+	</script>
+	
+  </head>
+  <body>
+  		<header>
+				<button id="SignOutButton" " type="button">Sign Out</button>
+				<img id="logo" src="images/Logo_HD.png" alt="" border="0">
+		</header>
+		<nav>
+			 <div class="navBar">
+			 	  <span>HOME</span>
+			 </div>
+			 <div class="navBar">
+			 	  <span>PARTNERSHIP LETTERS</span>
+			 </div>
+			 <div class="navBar">
+			 	  <span>PRESENTATIONS</span>
+			 </div>
+			 <div class="navBar">
+			 	  <span>ANALYSIS & CASE STUDIES</span>
+			 </div>
+			 <div class="navBar">
+			 	  <span>DOCUMENTATION</span>
+			 </div>
+			 <div class="navBar">
+			 	  <span>CONTACT</span>
+			 </div>
+		</nav>
+		<div id="mainContent">
+				 <section class="page" id="home">
+				 		  <h1 id="quote">"Opportunities come infrequently. When it rains gold, put out the bucket, not the thimble" </h1>
+						  <h1 id="quoteName"> - Warren Buffett</h1>
+				 </section>
+		</div>
+  </body>
+</html>

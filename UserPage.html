@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <!-- styles needed by jScrollPane -->
+    <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<link rel="stylesheet" type="text/css" href="userPage_style.css">
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/userPage_script.js"></script>
+    <title>ANGEL NET</title>
+  </head>
+<body>
+	<!--Set up top bar decoration-->
+    <div id="topBanner" style=
+    "background-color:#9DA1B4;width:100%;position:absolute;height:1px;left:0px;">
+    </div><img alt="" border="0" id="topLogo" src="images/logo_only_white.png">
+	<!--Set up buttons on top bar-->
+    <h1 class="standardButton" id="account">MY PROFILE</h1>
+    <h1 class="standardButton" id="logout">LOG OUT</h1>
+	<!--Container for User Profile-->
+    <div id="container">
+		<!--Set up for user list-->
+        <div id="userList">
+            <div id="homepageTitle">
+                Welcome Test
+            </div>
+        </div>
+		
+		<!--Set up for user view profile-->
+        <div id="profile">
+            <div id="defaultPage"><img alt="" border="0" id="logo" src=
+            "images/Logo_HD_white.png"></div>
+			
+			<!--Set up for user view profile-->
+            <div id="viewPage">
+				<!--Set up buttons-->
+                <h1 class="standardButton" id="editProfileButton">EDIT
+                PROFILE</h1>
+                <h1 class="standardButton" id="setAdminButton">SET ADMIN</h1>
+                <h1 class="standardButton" id="removeAdminButton">UNSET
+                ADMIN</h1>
+                <h1 class="standardButton" id="deleteProfileButton">DELETE
+                ACCOUNT</h1>
+				
+				<!--Set up for user behavior-->
+                <div id="userBehaviourPanel">
+                    <h1 class="behavior" id="title">User Behavior</h1>
+                    <h1 class="behavior" id="behavior1">1</h1>
+                    <h1 class="behavior" id="behavior2">2</h1>
+                    <h1 class="behavior" id="behavior3">3</h1>
+                    <h1 class="behavior" id="behavior4">4</h1>
+                    <h1 class="behavior" id="behavior5">5</h1>
+                    <h1 class="behavior" id="behavior6">6</h1>
+                    <h1 class="behavior" id="behavior7">7</h1>
+                </div><img id="userProfilePic" src="images/user_default.png">
+				
+				<!--Set up panel for user profile-->
+                <div id="userProfileName">
+                    Kelvin
+                </div>
+                <div id="userProfileEmail">
+                    kelvin_luo_creator@Hotmail.com
+                </div>
+                <div id="userIdentity">
+                    kelvin_luo_creator@Hotmail.com
+                </div>
+                <div id="userProfileDescription">
+                    <p style="text-indent: 20px;">He is a very handsome
+                    guy.</p>
+                </div>
+            </div>
+			<!--Set up for user edit profile-->
+            <div id="editPage">
+                <img id="userEditPic" src="images/user_default.png">
+                
+				<!--Upload photo to replace the profile pic-->
+				<form action="/upload" enctype="multipart/form-data" id=
+                "photoUploadForm" method="post" name="photoUploadForm">
+                    <input id="fileSelect" name="theFile" type="file">
+                    <input id="photoEmail" name="email" style=
+                    "opacity:0;display:none;" type="text">
+                    <h1 class="standardButton" id="submitPhotoButton">UPLOAD
+                    PHOTO</h1>
+                </form>
+				
+				<!--Set up user edit panel-->
+                <div id="userEditEmail">
+                    kelvin_luo_creator@Hotmail.com
+                </div>
+                <div id="userEditName">
+                    Display Name:
+                </div><input id="userEditNameBox" type="text">
+                <div id="userEidtDesciprtion">
+                    Desciprtion:
+                </div>
+                <textarea cols="50" id="userEditDescriptionBox" rows="4"></textarea>
+                <h1 class="warning" id="warn1"></h1>
+                <h1 class="standardButton" id="saveChangeButton">SAVE
+                CHANGE</h1>
+				
+				<!--Set up user password Panel=-->
+                <div class="inputPwdLabel" id="userEidtPwd1">
+                    Old Password:
+                </div><input class="inputBox" id="userEditNewPwdBox1" type=
+                "text">
+                <div class="inputPwdLabel" id="userEidtPwd2">
+                    New Password:
+                </div><input class="inputBox" id="userEditNewPwdBox2" type=
+                "text">
+                <div class="inputPwdLabel" id="userEidtPwd3">
+                    Confirm Password:
+                </div><input class="inputBox" id="userEditNewPwdBox3" type=
+                "text">
+                <h1 class="warning" id="warn2"></h1>
+                <h1 class="standardButton" id="confirmPasswordChange">CHANGE
+                PASSWORD</h1>
+            </div>
+        </div>
+    </div><!--h1 id="test"> </h1-->
+    <div id="botBanner" style=
+    "background-color:#9DA1B4;width:100%;position:absolute;height:1px;left:0px;">
+    </div>
+</body>
+</html>

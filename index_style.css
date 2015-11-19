@@ -1,0 +1,228 @@
+          body {
+              background-color: #fff;
+              -webkit-user-select: none;
+          /* Chrome/Safari */
+              -moz-user-select: none;
+          /* Firefox */
+              -ms-user-select: none;
+          /* IE10+ */
+          /* Rules below not implemented in browsers yet */
+              -o-user-select: none;
+              user-select: none;
+          }
+          
+          #backgroundImage {
+              position: absolute;
+              left: 0;
+              top: 0;
+          }
+          
+          #backgroundImageHolder {
+              overflow: hidden;
+              position: absolute;
+              left: 0;
+              top: 0;
+          }
+          
+          #logoFrame {
+              position: absolute;
+              display: block;
+              border: 6px solid rgba(0,0,0,0.7);
+              opacity: 0;
+              width: 100px;
+              height: 100px;
+              top: 0;
+              left: 0;
+          }
+          
+          header {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-color: rgba(255,255,255,0.15);
+          }
+          
+          #logo {
+              position: absolute;
+              width: 120px;
+              height: 120px;
+              opacity: 0;
+              user-drag: none;
+              -moz-user-select: none;
+              -webkit-user-drag: none;
+          }
+          
+          #topLogo {
+              position: absolute;
+              width: 120px;
+              height: 120px;
+              opacity: 1;
+              user-drag: none;
+              -moz-user-select: none;
+              -webkit-user-drag: none;
+          }
+          
+          #title {
+              position: absolute;
+              width: 1100px;
+              height: 110px;
+              opacity: 0;
+              user-drag: none;
+              -moz-user-select: none;
+              -webkit-user-drag: none;
+          }
+          
+          #loginSelect {
+              position: absolute;
+              visibility: visible;
+              width: 400px;
+              height: 80px;
+              opacity: 0;
+              background-size: cover;
+              background-image: url(images/logo_off.png);
+              cursor: pointer;
+          }
+          
+          #loginSelect:hover {
+              background-image: url(images/logo_on.png);
+          }
+          
+          #signupSelect {
+              position: absolute;
+              visibility: visible;
+              width: 400px;
+              height: 80px;
+              opacity: 0;
+              background-size: cover;
+              background-image: url(images/signup_off.png);
+              cursor: pointer;
+          }
+          
+          #signupSelect:hover {
+              background-image: url(images/signup_on.png);
+          }
+          
+          #logo img,#title img {
+              max-width: 100%;
+              max-height: 100%;
+              margin: auto;
+              display: block;
+          }
+          
+          .inputPanel {
+              position: absolute;
+              width: 100%;
+              height: 120px;
+              left: 0;
+              opacity: 0;
+          }
+          
+          input {
+              font-size: 15px;
+              padding-left: 15px;
+              padding-right: 15px;
+          }
+          
+          .userInput {
+              position: absolute;
+              width: 200px;
+              height: 30px;
+              border: 1px solid #B1B1B1;
+          }
+          
+          .warning {
+              position: absolute;
+              font-size: 15px;
+              color: #E90707;
+              font-family: ChampagneAndLimousines;
+              font-weight: 100;
+              text-align: left;
+              width: 300px;
+              margin-top: 8px;
+              letter-spacing: 4px;
+          }
+          
+          .inputLabel {
+              position: absolute;
+              font-size: 20px;
+              color: #5C6070;
+              font-family: ChampagneAndLimousines;
+              font-weight: 100;
+              text-align: right;
+              width: 300px;
+              margin-top: 8px;
+              letter-spacing: 4px;
+          }
+          
+          .userInputButton {
+              position: absolute;
+              font-size: 15px;
+              color: #fff;
+              width: 60px;
+              background-color: #31333b;
+              font-family: ChampagneAndLimousines;
+              font-weight: 100;
+              text-align: center;
+              margin-top: 12px;
+              letter-spacing: 1px;
+              cursor: pointer;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              padding-left: 10px;
+              padding-right: 10px;
+          }
+          
+          .userInputButton:hover {
+              color: #fff;
+              background-color: #9FA4B7;
+          }
+          
+          @media screen and (max-width: 1000px) {
+          .inputPanel {
+              margin-top: 20px;
+          }
+          
+          .userInput {
+              position: absolute;
+              width: 135px;
+              height: 20px;
+              border: 1px solid #B1B1B1;
+          }
+          
+          .inputLabel {
+              position: absolute;
+              font-size: 15px;
+              color: #5C6070;
+              font-family: ChampagneAndLimousines;
+              font-weight: 100;
+              text-align: right;
+              width: 200px;
+              margin-top: 6px;
+              letter-spacing: 4px;
+          }
+          
+          .userInputButton {
+              position: absolute;
+              font-size: 12px;
+              color: #fff;
+              width: 60px;
+              background-color: #31333b;
+              font-family: ChampagneAndLimousines;
+              font-weight: 100;
+              text-align: center;
+              margin-top: 12px;
+              letter-spacing: 1px;
+              cursor: pointer;
+              padding-top: 2px;
+              padding-bottom: 2px;
+              padding-left: 2px;
+              padding-right: 2px;
+          }
+          }
+          
+          @font-face {
+              font-family: ChampagneAndLimousines;
+              src: url("fonts/Champagne & Limousines.woff");
+          }
